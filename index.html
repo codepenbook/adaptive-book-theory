@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Адаптив простыми словами</title>
+</head>
+
+<body>
+
+    <div class="menu">
+        <div class="menu__body">
+            <ul class="menu__list header__menu">
+                <li class="menu__item">
+                    <a href="#introduction" class="menu__link">Введение</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#fixed-layout" class="menu__link">Фиксированная верстка (не адаптивная)</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#responsive-layout" class="menu__link">Отзывчивая верстка (резиновая)</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#adaptive-layout" class="menu__link">Адаптивная верстка (с брейкпоинтами)</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#responsive-adaptive" class="menu__link">Отзывчивая-адаптивная верстка (резиновая с брейкпоинтами)</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#conclusion" class="menu__link">Итоги</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#practice" class="menu__link">Практика</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__burger">
+            <span></span>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner__container">
+            <div class="banner__body">
+                <div class="banner__preview preview-banner">
+                    <h1 class="preview-banner__title">Учебник по адаптивной верстке</h1>
+                    <div class="preview-banner__desc">Тут собранна лишь некоторая часть основных понятий, свойств и строк кода, которые необходимо понять.</div>
+                </div>
+                <div class="banner__links links-banner">
+                    <h2 class="title">Основные источники</h2>
+                    <ol class="links-banner__list">
+                        <li class="links-banner__item">
+                            <a target="_blank" href="https://html5book.ru/category/vyorstka/" class="links-banner__link">Учебник по верстке</a>
+                        </li>
+                        <li class="links-banner__item">
+                            <a target="_blank" href="https://youtube.com/playlist?list=PLM6XATa8CAG4uCli-pMvuvwj46UaQoqIc" class="links-banner__link">Бесплатный курс на YouTube от “Фрилансер по жизни”</a>
+                        </li>
+                        <li class="links-banner__item">
+                            <a target="_blank" href="https://skillbox.ru/course/frontend-pro-expert/" class="links-banner__link">Курс SkillBox “Front-end разработчик” </a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="banner__advice advice-banner">
+                    <h2 class="title">Описание</h2>
+                    <p><strong>Адаптивная вёрстка</strong> сайта позволяет веб-страницам автоматически подстраиваться под экраны планшетов и смартфонов. Мобильный интернет-трафик растёт с каждым годом и чтобы эффективно обрабатывать этот трафик, нужно предлагать
+                        пользователям адаптивные сайты с удобным интерфейсом.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <section id="introduction">
+        <div class="_container">
+            <div class="introduction__body">
+                <h2 class="title">Введение</h2>
+                <p>И так в целом можно выделить 4 подхода к верстке, это:</p>
+                <div class="types-of-layout">
+                    <a href="#fixed-layout" class="padding">- Фиксированная верстка (не адаптивная)</a>
+                    <a href="#responsive-layout" class="padding">- Отзывчивая верстка (резиновая)</a>
+                    <a href="#adaptive-layout" class="padding">- Адаптивная верстка (с брейкпоинтами)</a>
+                    <a href="#responsive-adaptive" class="padding">- Отзывчивая-адаптивная верстка (резиновая с брейкпоинтами)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fixed-layout">
+        <div class="_container">
+            <div class="fixed-layout__body">
+                <h2 id="fixed" class="title">Фиксированная верстка (не адаптивная)</h2>
+                <p>В примере ниже видно, что сайт никак не адаптируется при изменении ширины экрана, а лишь маштабируется. В <strong>head</strong> > <strong>meta</strong> указано <strong>name="viewport"</strong> и <strong>content="width=1200"</strong>, а
+                    для <strong>container</strong> в <strong>style.css</strong>, написано <strong>min-width: 1200px</strong>.</p>
+            </div>
+            <br>
+            <p class="codepen" data-height="500" data-default-tab="html" data-slug-hash="wvPgXNL" data-preview="true" data-user="codepen-book" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/codepen-book/pen/wvPgXNL">
+			  Untitled</a> by codepen.book (<a href="https://codepen.io/codepen-book">@codepen-book</a>)
+			  on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+        </div>
+        <br>
+        <div class="img-container">
+            <div class="fixed__img">
+                <img class="fixed-one" src="assets/img/fixed_1024.jpg" alt="fixed_1024">
+                <img class="fixed-two" src="assets/img/fixed_320.jpg" alt="fixed_320">
+            </div>
+        </div>
+    </section>
+
+    <section id="responsive-layout">
+        <div class="_container">
+            <div class="responsive-layout__body">
+                <h2 class="title">Отзывчивая верстка (резиновая)</h2>
+                <p>Здесь мы записываем значения в процентах для наших блоков, после чего они как бы становятся резиновыми.</p>
+                <p>Чтобы добиться такого эффекта в <strong>head</strong> > <strong>meta</strong> указано <strong>name="viewport"</strong> и <strong>content="width=device-width"</strong>, а в <strong>style.css</strong> мы снимаем ограничения минимальной ширины
+                    для <strong>body</strong> и выставляем <strong>max-width: 1200px</strong> для <strong>container.</strong></p>
+                <p>Так для первых трёх блоков напишем значение <strong>flex: 0 1 33.333%</strong> и теперь они будут занимать всю доступную ширишу, выстроившись в три "колонки".</p>
+                <p>Аналогично и с блоками ниже, но уже в свойстве <strong>flex</strong> необходимо записать <strong>flex: 0 1 50%</strong>, т.к. у нас по сути два блока, первый большой и второй, в котором находятся еще два блока.</p>
+            </div>
+            <br>
+            <p class="codepen" data-height="500" data-default-tab="html" data-slug-hash="xxPgMMX" data-preview="true" data-user="codepen-book" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/codepen-book/pen/xxPgMMX">
+					Untitled</a> by codepen.book (<a href="https://codepen.io/codepen-book">@codepen-book</a>)
+					on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+        </div>
+        <br>
+        <div class="img-container">
+            <div class="fixed__img">
+                <img class="fixed-one" src="assets/img/responsive__1400.jpg" alt="fixed_1024">
+                <img class="fixed-two" src="assets/img/responsive__425.jpg" alt="fixed_320">
+            </div>
+        </div>
+    </section>
+
+    <section id="adaptive-layout">
+        <div class="_container">
+            <div class="adaptive-layout__body">
+                <h2 class="title">Адаптивная верстка (с брейкпоинтами)</h2>
+                <p>При адаптивной верстке используются брейкпоинты, в которых мы укажем изменения <strong>max-width</strong> в <strong>container</strong>. Делается это для того, чтобы сайт безопасно отображался при различных разрешениях экрана устройства.</p>
+                <br>
+                <p>Такие брейкпоинты имееют запись:</p>
+                <p><strong>@media (max-width: 1200px) {</strong></p>
+                <p class="padding"><strong>.container {</strong></p>
+                <p class="padding"><strong>max-width: 970px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+                <p><strong>@media (max-width: 992px) {</strong></p>
+                <p class="padding"><strong>.container {</strong></p>
+                <p class="padding"><strong>max-width: 750px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+                <p><strong>@media (max-width: 767px) {</strong></p>
+                <p class="padding"><strong>.container {</strong></p>
+                <p class="padding"><strong>max-width: none;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+            </div>
+            <p class="codepen" data-height="500" data-default-tab="html" data-slug-hash="QWOdRaX" data-preview="true" data-user="codepen-book" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/codepen-book/pen/QWOdRaX">
+					Untitled</a> by codepen.book (<a href="https://codepen.io/codepen-book">@codepen-book</a>)
+					on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+        </div>
+        <br>
+        <div class="img-container">
+            <div class="fixed__img">
+                <img class="fixed-one" src="assets/img/adaptive_1148.jpg" alt="fixed_1024">
+                <img class="fixed-two" src="assets/img/adaptive_947.jpg" alt="fixed_320">
+            </div>
+        </div>
+    </section>
+
+    <section id="responsive-adaptive">
+        <div class="_container">
+            <div class="responsive-adaptive__body">
+                <h2 class="title">Отзывчивая-адаптивная верстка (резиновая с брейкпоинтами)</h2>
+                <p>Такая верстка совмещает в себе отзывчивость и адаптивность.</p>
+                <br>
+                <p>Тут нам уже не надо записывать брейкпоинты, в которых мы указывали <strong>max-width</strong> в <strong>container</strong> ранее.</p>
+                <br>
+                <p>Главная наша задача состоит в том, чтобы совместить отзывчивость и адаптивность.</p>
+                <br>
+                <p>И проблему, которую мы решим это то, что когда мы использовали <strong>отзывчивую(резиновую)</strong> верству и уменьшали размер экрана, то блоки становились все уже и уже, если бы в них был какой-то контент, то на ширине ниже <strong>767px</strong>,
+                    врядли мы смогли его адекватно прочитать.</p>
+                <br>
+                <div class="fixed__img">
+                    <img class="fixed-one" src="assets/img/no-responsive-adaptive_752.jpg" alt="fixed_1024">
+                    <img class="fixed-two" src="assets/img/no-responsive-adaptive_394.jpg" alt="fixed_320">
+                </div>
+                <br>
+                <p>Поэтому для ширины экрана <strong>767px</strong> мы зададим изменение раположения наших блоков. Так для первых трёх блоков запишем следующее:</p>
+                <p><strong>@media (max-width: 767px) {</strong></p>
+                <p class="padding"><strong>.one-list {</strong></p>
+                /* Свойство column выстроит наши блоки не вряд, а в колонку */
+                <p class="padding"><strong>flex-direction: column;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.one-list>*:not(:last-child) {</strong></p>
+                /* Зададим отступы снизу для каждого блока, кроме последнего */
+                <p class="padding"><strong>margin: 0px 0px 20px 0px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.one-column {</strong></p>
+                /* Так как наши блоки теперь не ряд, а колонкой, то мы можем указать для них 100%, чтобы занимали всю доступную ширишу */
+                <p class="padding"><strong>flex: 0 1 100%;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+                <p>Аналогично запишим и для блоков ниже:</p>
+                <p><strong>@media (max-width: 767px) {</strong></p>
+                <p class="padding"><strong>.two-body {</strong></p>
+                <p class="padding"><strong>flex-direction: column;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.two-body>*:not(:last-child) {</strong></p>
+                <p class="padding"><strong>margin: 0px 0px 20px 0px;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p class="padding"><strong>.two-big,</strong></p>
+                <p class="padding"><strong>.two-smalls {</strong></p>
+                <p class="padding"><strong>flex: 0 1 100%;</strong></p>
+                <p class="padding"><strong>}</strong></p>
+                <p><strong>}</strong></p>
+                <br>
+                <p>В результате чего, получим:</p>
+                <br>
+                <p class="codepen" data-height="500" data-default-tab="html" data-slug-hash="gOXgNZa" data-preview="true" data-user="codepen-book" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/codepen-book/pen/gOXgNZa">
+						Untitled</a> by codepen.book (<a href="https://codepen.io/codepen-book">@codepen-book</a>)
+						on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="img-container">
+            <div class="fixed__img">
+                <img class="fixed-one" src="assets/img/responsive-adaptive_798.jpg" alt="fixed_1024">
+                <img class="fixed-two" src="assets/img/responsive-adaptive_452.jpg" alt="fixed_320">
+            </div>
+        </div>
+    </section>
+
+    <section id="conclusion">
+        <div class="_container">
+            <div class="conclusion__body">
+                <h2 class="title">Подведем итоги</h2>
+                <p>Мы рассмотрели 4 подхода к верстке и назревает вопрос: - <strong>Какой тип верстки использовать</strong>?</p>
+                <br>
+                <p>Дело в том, что это зависит от конкретной задачи, дизайна и ТЗ заказчика.</p>
+                <br>
+                <p>Однако получается так, что <strong>отзывчивый адаптив</strong> решает все проблемы, которые могут возникнуть и именно его рекомендуется использовать.</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section id="practice">
+        <div class="_container">
+            <div class="practice__body">
+                <h2 class="title">Практика</h2>
+                <p>В этом разделе мы с вами сверстаем адаптивный сайт, где подробно будет объясняться каждый шаг, после чего вы уже самостоятельно сможете делать адаптивный сайт и решать трудности, которые <strong>будут</strong> возникать в процессе.</p>
+                <br>
+                <a href="https://codepenbook.github.io/adaptive-book-practice/" class="practice" target="_blank">Перейти к практике →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="banner__container">
+            <hr>
+            <div class="footer__body">
+                <div class="footer__copy">УАвиаК-МЦК © 2022</div>
+                <div class="footer__socials">
+                    <ul class="socials__list">
+                        <li class="social__item">
+                            <a href="https://uaviak.ru/" class="social__link">
+                                <img src="assets/img/uaviak.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://codepen.io/codepen-book" class="social__link">
+                                <img src="assets/img/codepen.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://github.com/codepenbook" class="social__link">
+                                <img src="assets/img/github.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>
